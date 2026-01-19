@@ -1,0 +1,169 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f4f4f4;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 900px;
+  max-width: calc(100vw - 32px);
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  padding: 22px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.muted {
+  margin: 6px 0 0;
+  opacity: 0.7;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1.2fr 1.4fr 0.8fr 0.9fr 0.6fr;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: none;
+  background: #111;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ghost {
+  background: #eaeaea;
+  color: #111;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.search {
+  min-width: 260px;
+  flex: 1;
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  background: #eaeaea;
+  color: #111;
+}
+
+.chip.active {
+  background: #111;
+  color: #fff;
+}
+
+.list {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.item {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.titleRow {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: 800;
+}
+
+.role {
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.date {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.danger {
+  background: #c62828;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  margin-top: 8px;
+  background: #eee;
+}
+
+.badge.applied { background: #e3f2fd; }
+.badge.interview { background: #fff3e0; }
+.badge.offer { background: #e8f5e9; }
+.badge.rejected { background: #ffebee; }
+
+@media (max-width: 820px) {
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
