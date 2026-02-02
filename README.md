@@ -1,16 +1,36 @@
-# React + Vite
+# Job Tracker 💼
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that allows users to track job applications, update statuses, search/filter entries, and persist data between sessions.
 
-Currently, two official plugins are available:
+### 🚀 Live Demo  
+👉 https://jacksjob-tracker.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 💻 Source Code  
+👉 https://github.com/jpc2301-netizen/job-tracker
 
-## React Compiler
+## 🧠 Technical Highlights
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Built a CRUD application in React (add, update, delete job applications)
+- Managed application state using React Hooks (`useState`, `useEffect`)
+- Implemented filtering by job status and search functionality
+- Persisted user data using `localStorage`
+- Designed responsive layout using modern CSS
+- Deployed using GitHub → Netlify continuous deployment
 
-## Expanding the ESLint configuration
+## ⚙️ Challenges & Solutions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Challenge:** Keeping application data after refresh  
+**Solution:** Synced React state with browser `localStorage`
+
+**Challenge:** Filtering and searching efficiently  
+**Solution:** Implemented derived state and conditional rendering
+
+**Challenge:** Structuring the UI clearly  
+**Solution:** Used component-based layout and grouped controls logically
+
+## 🛠 Tech Stack
+- React (Vite)
+- JavaScript (ES6+)
+- CSS
+- LocalStorage API
+- Netlify Deployment
