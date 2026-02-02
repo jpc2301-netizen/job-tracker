@@ -1,3 +1,4 @@
+HEAD
 # Job Tracker 💼
 
 A React application that allows users to track job applications, update statuses, search/filter entries, and persist data between sessions.
@@ -34,3 +35,23 @@ A React application that allows users to track job applications, update statuses
 - CSS
 - LocalStorage API
 - Netlify Deployment
+
+# Job Tracker (React) 💼
+
+A simple job application tracker built with React. Add applications, update status, filter, and search. Data persists using localStorage.
+
+## Live Demo
+👉 https://jacksjob-tracker.netlify.app/
+
+## Features
+- Add company, role, date, and status
+- Update status (Applied / Interview / Offer / Rejected)
+- Filter by status + search
+- Persists data with localStorage
+
+## Tech Stack
+- React (Vite)
+- CSS
+- Netlify (CI/CD via GitHub)
+s
+ 5b7ebac (Job Tracker React app)
