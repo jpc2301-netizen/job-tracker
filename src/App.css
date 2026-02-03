@@ -1,3 +1,17 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+input, select, textarea {
+  color: #222;
+  background: white;
+}
+
+
+
 .page {
   min-height: 100vh;
   display: grid;
@@ -7,14 +21,13 @@
   font-family: Arial, sans-serif;
 }
 
-.card {
-  width: 900px;
-  max-width: calc(100vw - 32px);
+.card, .task, .job-card {
   background: white;
-  border-radius: 18px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-  padding: 22px;
+  color: #222;
 }
+
+ 
+
 
 .header {
   display: flex;
@@ -49,7 +62,7 @@ button {
   padding: 10px 12px;
   border-radius: 12px;
   border: none;
-  background: #111;
+  background: #2563eb;
   color: #fff;
   font-weight: 700;
   cursor: pointer;
@@ -58,6 +71,10 @@ button {
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+button:hover {
+  background: #1e40af;
 }
 
 .ghost {
